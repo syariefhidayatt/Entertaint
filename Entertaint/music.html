@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style_dashboard.css">
+  <link rel="stylesheet" href="style_movie.css">
+  <link rel="stylesheet" href="style_music.css">
+</head>
+<body data-bs-theme="dark">
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+    
+    <!--Theme-->
+    <div class="form-check form-switch mx-4">
+      <input class="form-check-input p-2" 
+      type="checkbox"
+      role="switch"
+      id="flexswitchCheckChecked"
+      checked
+      onclick="myFunction()"
+      />
+      <div class="form-group">
+      <i class="bi bi-lightbulb"></i>
+      </div>
+    </div>
+
+    <!--Container-->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="dashboard.html"><img src="image/PinClipart.com_pharmacy-cliparts_5403180.png" style="width:70px;"> </a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="dashboard.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="movie.html">Movies</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Lainnya
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#Off_Music">Official Music</a></li>
+              <li><a class="dropdown-item" href="#Indo_Music">Indonesia Music</a></li>
+              <li><a class="dropdown-item" href="#Album">Album</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+
+  <!--Slideshow-->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card text-bg-dark">
+            <div class="banner">
+              <img src="image/18757.jpg" class="bg" class="d-block w-10">
+              <div class="content">
+                  <h2>Nothing Was The Same</h2>
+                  <h4>
+                      <span>2013</span>
+                      <span>16 Songs</span>
+                      <span>Drake</span>
+                    </h4>
+                  </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card text-bg-dark">
+              <div class="banner">
+                <img src="image/901569.jpg" class="bg" class="d-block w-10">
+                <div class="content">
+                    <h2>Skins</h2>
+                    <h4>
+                        <span>2018</span>
+                        <span>10 Songs</span>
+                        <span>XXXTentacion</span>
+                    </h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card text-bg-dark">
+              <div class="banner">
+                <img src="image/474763.jpg" class="bg" class="d-block w-10">
+                <div class="content">
+                    <h2>The Eminem Show</h2>
+                    <h4>
+                        <span>2002</span>
+                        <span>20 Songs</span>
+                        <span>Eminem</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card text-bg-dark">
+                <div class="banner">
+                  <img src="image/923214.jpg" class="bg" class="d-block w-10">
+                  <div class="content">
+                      <h2>808s & Heartbreak</h2>
+                      <h4>
+                          <span>2008</span>
+                          <span>12 Songs</span>
+                          <span>Kanye West</span>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          <div class="carousel-item">
+            <div class="card text-bg-dark">
+              <div class="banner">
+                <img src="image/1449932.jpg" class="bg" class="d-block w-10">
+                <div class="content">
+                    <h2>Greatest Hits</h2>
+                    <h4>
+                        <span>2005</span>
+                        <span>18 Songs</span>
+                        <span>Blink 182</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+
+      
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+
+  <!--Official Music Video-->
+  <section class="OffMusic" id="OffMusic">
+  <p class="text-light-emphasis">Official Music Video</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+            <iframe class="secondone" width="420" height="315" src="https://www.youtube.com/embed/yZY-I61JA7k?si=8oMnEZprzLLimUk3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe> 
+            <div class="card-body text-center"> 
+              <p class="titlehead"></p> 
+              <p class="card-text">Boy Pablo - Be Mine</p> 
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <iframe class="secondone" width="420" height="315"  src="https://www.youtube.com/embed/VyPwEZTIpVc?si=Z_9Sf9m0ANPxRUR2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            <div class="card-body text-center"> 
+              <p class="titlehead"></p> 
+              <p class="card-text">Neeck Deep - Wish You Were Here</p> 
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <iframe class="secondone" width="420" height="315" src="https://www.youtube.com/embed/HTcL9WkB_wg?si=TKucwlOUVFgScnl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            <div class="card-body text-center"> 
+              <p class="titlehead"></p> 
+              <p class="card-text">Passanger - Let Her Go</p> 
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <iframe class="secondone" width="420" height="315" src="https://www.youtube.com/embed/qFX2cXJyxuI?si=AHgl-CGPcb-Zc9mH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            <div class="card-body text-center"> 
+              <p class="titlehead"></p> 
+              <p class="card-text">Stars And Rabbit - Worth It</p> 
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <iframe class="secondone" width="420" height="315" src="https://www.youtube.com/embed/k69asKbo9Ms?si=BwsyrURNjW1boRUj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="card-body text-center"> 
+              <p class="titlehead"></p> 
+              <p class="card-text">Furbabyfur - Waking Back Home</p> 
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <iframe class="secondone" width="420" height="315"  src="https://www.youtube.com/embed/5Rs2m3lhg-k?si=asjpvaonknMv18FD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            <div class="card-body text-center"> 
+              <p class="titlehead"></p> 
+              <p class="card-text">Green Day - The Forgotten</p> 
+            </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <!--Indonesia Music-->
+  <section class="IndoMusic" id="IndoMusic">
+    <p class="text-light-emphasis">Indonesia Official Music Video</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+              <iframe class="secondone" width="420" height="315"  src="https://www.youtube.com/embed/QSWYyoF79oE?si=4ndIK5cNpjWkb788" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="card-body text-center"> 
+                <p class="titlehead"></p> 
+                <p class="card-text">Mahalini - Sial</p> 
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <iframe class="secondone" width="420" height="315"  src="https://www.youtube.com/embed/t9VWICGOD90?si=7jb7ICq72s8HDpdv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="card-body text-center"> 
+                <p class="titlehead"></p> 
+                <p class="card-text">Ghea Indrawari - Jiwa Yang Bersedih</p> 
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <iframe class="secondone" width="420" height="315"  src="https://www.youtube.com/embed/85aQuYUWwHo?si=gnAxn4jimyXIEyYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="card-body text-center"> 
+                <p class="titlehead"></p> 
+                <p class="card-text">Anji - Sampai Mati</p> 
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <iframe class="secondone" width="420" height="315"  src="https://www.youtube.com/embed/o25_Tn8BnFM?si=fGCt5IcHggiqD0EJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="card-body text-center"> 
+                <p class="titlehead"></p> 
+                <p class="card-text">Andmesh - Anugerah Terindah</p> 
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <iframe class="secondone" width="420" height="315"  src="https://www.youtube.com/embed/qZIQAk-BUEc?si=WR8p5dCHP1_KZ9Rl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="card-body text-center"> 
+                <p class="titlehead"></p> 
+                <p class="card-text">Budi Doremi - Melukis Senja</p> 
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <iframe class="secondone" width="420" height="315"  src="https://www.youtube.com/embed/xMJXt74yEbY?si=mZeZ_bcvHUQNBjcJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="card-body text-center"> 
+                <p class="titlehead"></p> 
+                <p class="card-text">David Sumbing - Di Tepian Rindu</p> 
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Album Music-->
+  <section class="Album" id="Album">
+    <p class="text-light-emphasis">Albums released in 2023</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <iframe  class="spt"  src="https://open.spotify.com/embed/album/5HOHne1wzItQlIYmLXLYfZ?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="card-body text-center"> 
+              <p class="titlehead"></p> 
+              <p class="card-text">New Album</p> 
+            </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <iframe  class="spt"  src="https://open.spotify.com/embed/album/6tG8sCK4htJOLjlWwb7gZB?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="card-body text-center"> 
+              <p class="titlehead"></p> 
+              <p class="card-text">New Album</p> 
+            </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <iframe  class="spt"  src="https://open.spotify.com/embed/album/1xJHno7SmdVtZAtXbdbDZp?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="card-body text-center"> 
+              <p class="titlehead"></p> 
+              <p class="card-text">New Album</p> 
+            </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <iframe  class="spt"  src="https://open.spotify.com/embed/album/64LU4c1nfjz1t4VnGhagcg?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="card-body text-center"> 
+              <p class="titlehead"></p> 
+              <p class="card-text">New Album</p> 
+            </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <iframe  class="spt"  src="https://open.spotify.com/embed/album/6dVCpQ7oGJD1oYs2fv1t5M?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="card-body text-center"> 
+              <p class="titlehead"></p> 
+              <p class="card-text">New Album</p> 
+            </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <iframe  class="spt"  src="https://open.spotify.com/embed/album/3Uq1jNGnD412ZvCb6j2DKV?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="card-body text-center"> 
+              <p class="titlehead"></p> 
+              <p class="card-text">New Album</p> 
+            </div>
+        </div>
+      </div>
+      </div>
+
+      <!--Indonesia Album Music-->
+    <p class="text-light-emphasis">Indonesia Albums</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <iframe  class="spt"  src="https://open.spotify.com/embed/album/3hWFLdXIZssIipx3cohFFf?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="card-body text-center"> 
+                <p class="titlehead"></p> 
+                <p class="card-text">New Album</p> 
+              </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <iframe  class="spt"  src="https://open.spotify.com/embed/album/6sV7rZpvGIIQS1ccs61YXV?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="card-body text-center"> 
+                <p class="titlehead"></p> 
+                <p class="card-text">New Album</p> 
+              </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <iframe  class="spt"  src="https://open.spotify.com/embed/album/7MpAqxM7Mew0Vb1clDl6pJ?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <div class="card-body text-center"> 
+                <p class="titlehead"></p> 
+                <p class="card-text">New Album</p> 
+              </div>
+          </div>
+        </div>
+      </div>
+    <script>
+      function myFunction() {
+          var element = document.body;
+          element.dataset.bsTheme =
+          element.dataset.bsTheme == "light" ? "dark" : "light";
+      }
+      function stepFunction(event) {
+          debugger;
+          var element = document.getElementsByClassName("collapse");
+          for (var i = 0; i < element.length; i++) {
+          if (element[i] !== event.target.ariaControls) {
+              element[i].classList.remove("show");
+          }
+          }
+      }
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
+
+</body>
+</html>
